@@ -12,12 +12,14 @@ function App() {
 
       <main>
         <div id="songList">
-          <Track
-            url={data.album.images[1].url}
-            tittle={data.name}
-            artists={data.artists[0].name}
-            album={data.album.name}
-          ></Track>
+          {data.map((track, index) => (
+            <Track
+              url={track.album.images[1].url}
+              tittle={track.name}
+              artists={track.artists[0].name}
+              album={track.album.name}
+            ></Track>
+          ))}
         </div>
       </main>
     </div>
