@@ -102,6 +102,7 @@ textarea {
   height: auto;
   width: auto;
   margin: auto;
+  margin-top: 10px;
   padding: auto;
   display: flex;
   border-radius: 5px;
